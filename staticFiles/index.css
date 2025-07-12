@@ -29,6 +29,18 @@ button {
   margin: 20px;
   padding: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border: 2px solid red;
+}
+.pagination .container {
+  display: flex;
+  justify-content: space-between;
+}
+.pagination a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  border-radius: 8px;
+  cursor: pointer;
 }

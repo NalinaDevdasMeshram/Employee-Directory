@@ -13,26 +13,32 @@
       <button>filter</button>
     </div>
     <div class="pagination">
-      <label for="sort"
-        >Sort:
-        <select id="sort">
-          <option value="">--Select--</option>
-          <option value="firstName">First Name</option>
-          <option value="Department">Department</option>
-          <option value="role">Role</option>
-        </select>
-      </label>
-      <label for="show">
-        Show:
-        <select id="show">
-          <option value="10">10</option>
-          <option value="25">25</option>
-          <option value="50">50</option>
-          <option value="100">100</option>
-        </select>
-      </label>
-      <a href="">Add Employee</a>
+      <div class="container">
+        <label for="sort"
+          >Sort:
+          <select id="sort">
+            <option value="">--Select--</option>
+            <option value="firstName">First Name</option>
+            <option value="Department">Department</option>
+            <option value="role">Role</option>
+          </select>
+        </label>
+
+        <label for="show">
+          Show:
+          <select id="show">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </label>
+      </div>
+      <a href="./templateFile/form.ftl">Add Employee</a>
     </div>
+    <footer>
+      <p>&copy; 2025 Employee Directory App. All rights reserved.</p>
+    </footer>
     <script src="./jsFiles/App.js"></script>
   </body>
 </html>
