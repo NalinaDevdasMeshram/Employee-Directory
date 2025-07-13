@@ -1,6 +1,7 @@
 import freemarker.template.*;
 import java.util.*;
 import java.io.*;
+
 public class Main {
     public static void main(String[] args) throws Exception {
         Configuration cfg = new Configuration(Configuration.VERSION_2_3_31);
@@ -17,7 +18,7 @@ public class Main {
         Map<String, Object> dataModel = new HashMap<>();
         dataModel.put("employees", employees);
 
-        Writer out = new FileWriter("output.html");
+        Writer out = new FileWriter("index.html");
         template.process(dataModel, out);
         out.close();
 
