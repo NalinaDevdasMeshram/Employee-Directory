@@ -1,4 +1,4 @@
-<#assign employee = [
+<#assign employees = [
 {"id" : 1, "firstname": "Nalina", "lastname":"Meshram" , "email": "nalinameshram@example.com", "department": "IT", "role":"Frontend Developer"},
 {"id" : 2, "firstname": "veerendra", "lastname":"Shram" , "email": "veerendrashram@example.com", "department": "IT", "role":"Frontend Developer"},
 {"id" : 3, "firstname": "sumith", "lastname":"Mishra" , "email": "sumithmishram@example.com", "department": "HR", "role":"HR Manager"},

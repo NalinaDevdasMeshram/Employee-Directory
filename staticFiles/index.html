@@ -1,3 +1,4 @@
+<#include "mock-data.ftl">
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +13,7 @@
       <input type="text" placeholder="Search by name or email" />
       <button>filter</button>
     </div>
-    <div class="pagination">
+    <div id="pagination">
       <div class="container">
         <label for="sort"
           >Sort:
@@ -36,9 +37,42 @@
       </div>
       <a href="./templateFile/form.ftl">Add Employee</a>
     </div>
+    <aside id="filtersidebar" class="hidden">
+      <h2>Filter Employee</h2>
+      <label for="firstName"
+        >First Name :
+        <input type="text" />
+      </label>
+      <label for="Department">
+        Department:
+        <input type="text" />
+      </label>
+      <label for="Role">
+        Role:
+        <input type="text" />
+      </label>
+      <button>Apply</button>
+      <button>Reset</button>
+    </aside>
+
+    <section id="employeeList">
+    <#list employees as emp>
+      <div class="employee-card" data-id="${emp.id}">
+        <h3>${emp.firstName} ${emp.lastName}</h3>
+        <p><strong>Email:</strong> ${emp.email}</p>
+        <p><strong>Department:</strong> ${emp.department}</p>
+        <p><strong>Role:</strong> ${emp.role}</p>
+        <button onclick="editEmployee(${emp.id})">Edit</button>
+        <button onclick="deleteEmployee(${emp.id})">Delete</button>
+      </div>
+    </#list>
+  </section>
     <footer>
       <p>&copy; 2025 Employee Directory App. All rights reserved.</p>
     </footer>
+    <script>
+      const employeeData = ${employees?json_string};
+    </script>
     <script src="./jsFiles/App.js"></script>
   </body>
 </html>

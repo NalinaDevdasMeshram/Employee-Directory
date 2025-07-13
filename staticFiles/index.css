@@ -1,46 +1,82 @@
-* {
-  margin: 0;
+body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
   box-sizing: border-box;
+  height: 100vh;
 }
 
-.head {
-  padding: 15px;
-  background-color: black;
+.header {
+  background: #222;
   color: white;
-  display: flex;
-  justify-content: space-around;
-}
-
-input {
-  font-size: 15px;
-  width: 25%;
-  padding: 10px;
-  border-radius: 5px;
-}
-button {
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.pagination {
-  margin: 20px;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid red;
-}
-.pagination .container {
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
 }
-.pagination a {
-  padding: 15px;
-  text-decoration: none;
+
+.search-filter {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+
+.search-filter button {
+  padding: 0.4rem;
+  border-radius: 4px;
+}
+
+.search-filter input {
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.add-btn {
+  background: green;
   color: white;
-  background-color: green;
-  border-radius: 8px;
-  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.employee-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  overflow-y: auto;
+  height: 50%;
+}
+
+.employee-card {
+  font-size: 16px;
+
+  background: white;
+  padding: 1rem;
+  width: 280px;
+  height: 200px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
