@@ -21,6 +21,6 @@ public class Main {
         template.process(dataModel, out);
         out.close();
 
-        System.out.println("✅ output.html generated!");
+        System.out.println("✅ index.html generated!");
     }
 }
